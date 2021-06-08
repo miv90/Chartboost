@@ -1,0 +1,15 @@
+{
+  "chromeWebSecurity": false,
+  "viewportWidth": 414,
+  "viewportHeight": 736,
+  "includeShadowDom": true,
+  "defaultCommandTimeout":4000,
+  "env": {
+    "url": "video-QA-test\\video-v3-default-not-muted.html"
+  },
+  "testFiles": "**/*.feature",
+  "retries": {
+    "runMode": 0,
+    "openMode": 0
+  }
+}

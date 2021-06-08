@@ -1,0 +1,21 @@
+{
+  "name": "automation",
+  "version": "1.0.0",
+  "description": "qa",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules\\.bin\\cypress run",
+    "testChrome": "npm run test -- --browser chrome --headless",
+    "testDashboardChromeHeadless": "npm run test -- --record --key ebb01e5b-65ce-478b-a1f9-3f0b4dc26e63 --browser chrome --headless",
+    "testConjunto1": "npm run testDashboardChromeHeadless -- --spec \"cypress\\integration\\examples\\Conjunto1\\*\""
+  },
+  "author": "Marina Villaggi",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^7.4.0",
+    "cypress-cucumber-preprocessor": "^4.1.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "step_definitions": "cypress/integration/cucumber/features/step_definitions/**/"
+ }
+}
